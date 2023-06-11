@@ -1,13 +1,27 @@
 
 #include <iostream>
 
+#include "menu/login.h"
+
 using namespace std;
 
 int main()
 {
-  cout << "Hello World!\n";
+  int option;
 
-  cout << "Testing github\n";
+  do
+  {
+
+    cout << "num:" << endl;
+    cin >> option;
+
+    switch (option)
+    {
+    case 1:
+      Login();
+      break;
+    }
+  } while (option != 0);
 
   return 0;
 }

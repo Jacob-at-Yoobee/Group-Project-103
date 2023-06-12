@@ -12,7 +12,7 @@ int main()
   do
   {
 
-    cout << "num:" << endl;
+    cout << "num: " << endl;
     cin >> option;
 
     switch (option)
@@ -22,8 +22,6 @@ int main()
       break;
     }
   } while (option != 0);
-
-  cout << "DEEZ NUTS\n";
 
   return 0;
 }

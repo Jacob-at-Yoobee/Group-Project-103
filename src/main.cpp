@@ -1,4 +1,4 @@
-
+//testing
 #include <iostream>
 
 #include "menu/login.h"
@@ -22,6 +22,8 @@ int main()
       break;
     }
   } while (option != 0);
+
+  cout << "DEEZ NUTS\n";
 
   return 0;
 }

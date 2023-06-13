@@ -2,16 +2,39 @@
 //
 
 #include <iostream>
+#include "headers/menuItem.h"
+
+void displayMenu()
+{
+    std::cout << "Menu:" << std::endl;
+    std::cout << "1. run menuItem test" << std::endl;
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    // std::cout << "Hello World!\n";
+
+    MenuItem menuItem;
+
+    int choice = 0;
+
+    displayMenu();
+
+    std::cout << "Enter a option: ";
+    std::cin >> choice;
+
+    switch (choice)
+    {
+    case 1:
+        menuItem.execute();
+        break;
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
+// Tips for Getting Started:
 //   1. Use the Solution Explorer window to add/manage files
 //   2. Use the Team Explorer window to connect to source control
 //   3. Use the Output window to see build output and other messages

@@ -2,10 +2,10 @@
 //
 
 #include <iostream>
+#include "headers/cliTools.h"
+
 #include "headers/login.h"
 #include "headers/register.h"
-
-#include "headers/cliTools.h"
 
 Color C;
 GetInput getInput;
@@ -25,8 +25,7 @@ int main()
     int choice;
 
     Login login;
-    Register registerUser
-    ;
+    Register registerUser;
 
     do
     {
@@ -46,4 +45,6 @@ int main()
         }
 
     } while (choice != 3);
+
+    cout << C.brightRed("Exiting...") << "\n";
 }

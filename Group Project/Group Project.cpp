@@ -2,42 +2,48 @@
 //
 
 #include <iostream>
-#include "headers/menuItem.h"
+#include "headers/login.h"
+#include "headers/register.h"
+
+#include "headers/cliTools.h"
+
+Color C;
+GetInput getInput;
+
+using namespace std;
 
 void displayMenu()
 {
-    std::cout << "Menu:" << std::endl;
-    std::cout << "1. run menuItem test" << std::endl;
+    cout << "Menu:" << endl;
+    cout << "1. Login" << endl;
+    cout << "2. Register" << endl;
+    cout << "3. Exit" << endl;
 }
 
 int main()
 {
-    // std::cout << "Hello World!\n";
+    int choice;
 
-    MenuItem menuItem;
+    Login login;
+    Register registerUser
+    ;
 
-    int choice = 0;
-
-    displayMenu();
-
-    std::cout << "Enter a option: ";
-    std::cin >> choice;
-
-    switch (choice)
+    do
     {
-    case 1:
-        menuItem.execute();
-        break;
-    }
+
+        displayMenu();
+        cout << "Enter a number: ";
+        choice = getInput.getNumber(C.Green);
+
+        switch (choice)
+        {
+        case 1:
+            login.execute();
+            break;
+        case 2:
+            registerUser.execute();
+            break;
+        }
+
+    } while (choice != 3);
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started:
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

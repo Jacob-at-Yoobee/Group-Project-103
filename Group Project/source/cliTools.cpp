@@ -1,4 +1,5 @@
 #include "../headers/cliTools.h"
+#include <string>
 
 Color::Color()
 {

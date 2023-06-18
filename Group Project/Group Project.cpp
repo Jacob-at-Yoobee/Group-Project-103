@@ -17,7 +17,9 @@ void displayMenu()
     cout << "Menu:" << endl;
     cout << "1. Login" << endl;
     cout << "2. Register" << endl;
-    cout << "3. Exit" << endl;
+    cout << "3. Upcoming Events" << endl;
+    cout << "4. Contact Details" << endl;
+    cout << "5. Exit" << endl;
 }
 
 int main()

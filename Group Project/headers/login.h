@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-class MenuItem
+class Login
 {
 
 public:

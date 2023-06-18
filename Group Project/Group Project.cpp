@@ -5,8 +5,8 @@
 
 #include "headers/config.h"
 
-#include "headers/login.h"
-#include "headers/register.h"
+#include "headers/Menu_login.h"
+#include "headers/Menu_register.h"
 
 using namespace std;
 
@@ -24,8 +24,8 @@ int main()
 {
     int choice;
 
-    Login login;
-    Register registerUser;
+    MenuLogin MenuLogin;
+    MenuRegister MenuRegister;
 
     do
     {
@@ -37,14 +37,14 @@ int main()
         switch (choice)
         {
         case 1:
-            login.execute();
+            MenuLogin.execute();
             break;
         case 2:
-            registerUser.execute();
+            MenuRegister.execute();
             break;
         }
 
-    } while (choice != 3);
+    } while (choice != 5);
 
     cout << C.brightRed("Exiting...") << "\n";
 }

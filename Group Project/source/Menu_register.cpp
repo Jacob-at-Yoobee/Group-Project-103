@@ -1,9 +1,9 @@
-#include "../headers/register.h"
+#include "../headers/Menu_register.h"
 #include "../headers/config.h"
 
 using namespace std;
 
-int Register::execute()
+int MenuRegister::execute()
 {
   cout << C.blue("Register wow") << endl;
 

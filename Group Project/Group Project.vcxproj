@@ -137,10 +137,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Group Project.cpp" />
-    <ClInclude Include="headers\menuItem.h" />
-    <ClCompile Include="source\menuItem.cpp" />
-    <ClCompile Include="source\color.cpp" />
-    <ClInclude Include="headers\color.h" />
+    <ClInclude Include="headers\cliTools.h" />
+    <ClCompile Include="source\cliTools.cpp" />
+    <ClCompile Include="source\login.cpp" />
+    <ClInclude Include="headers\login.h" />
+    <ClCompile Include="source\register.cpp" />
+    <ClInclude Include="headers\register.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

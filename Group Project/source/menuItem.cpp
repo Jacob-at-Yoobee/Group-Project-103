@@ -1,25 +1,26 @@
 #include "../headers/menuItem.h"
+using namespace std;
 
 int MenuItem::execute()
 {
-  std::cout << "MenuItem:" << std::endl;
+  cout << "MenuItem:" << endl;
 
   int choice = 0;
 
-  std::cout << "Enter a number: ";
-  std::cin >> choice;
+  cout << "Enter a number: ";
+  cin >> choice;
 
   switch (choice)
   {
   case 1:
-    std::cout << "You chose 1" << std::endl;
+    cout << "You chose 1" << endl;
     break;
   case 2:
-    std::cout << "You chose 2" << std::endl;
+    cout << "You chose 2" << endl;
     break;
 
   default:
-    std::cout << "You did not choose 1 or 2" << std::endl;
+    cout << "You did not choose 1 or 2" << endl;
     break;
   }
 

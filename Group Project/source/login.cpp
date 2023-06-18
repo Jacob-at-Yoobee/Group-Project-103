@@ -4,7 +4,7 @@ using namespace std;
 
 int Login::execute()
 {
-  std::cout << "Login wow" << std::endl;
+  cout << "Login wow" << endl;
 
   return 0;
 }

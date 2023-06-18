@@ -4,7 +4,7 @@ using namespace std;
 
 int Register::execute()
 {
-  std::cout << "Register wow" << std::endl;
+  cout << "Register wow" << endl;
 
   return 0;
 }

@@ -2,13 +2,11 @@
 //
 
 #include <iostream>
-#include "headers/cliTools.h"
+
+#include "headers/config.h"
 
 #include "headers/login.h"
 #include "headers/register.h"
-
-Color C;
-GetInput getInput;
 
 using namespace std;
 

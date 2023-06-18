@@ -3,7 +3,7 @@
 // #include "config.h"
 #include <iostream>
 
-class Login
+class MenuLogin
 {
 
 public:

@@ -145,6 +145,8 @@
     <ClInclude Include="headers\login.h" />
     <ClCompile Include="source\register.cpp" />
     <ClInclude Include="headers\register.h" />
+    <ClCompile Include="source\config.cpp" />
+    <ClInclude Include="headers\config.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

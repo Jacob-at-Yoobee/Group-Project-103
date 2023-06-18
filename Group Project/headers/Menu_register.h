@@ -3,7 +3,7 @@
 // #include "config.h"
 #include <iostream>
 
-class Register
+class MenuRegister
 {
 
 public:

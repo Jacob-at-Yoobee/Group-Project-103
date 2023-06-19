@@ -2,3 +2,6 @@
 
 Color C;
 GetInput getInput;
+void Clear();
+
+Login logins;

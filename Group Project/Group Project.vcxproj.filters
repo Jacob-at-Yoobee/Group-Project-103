@@ -39,6 +39,9 @@
     <ClCompile Include="source\Menu_contact.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Teacher_home_screen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\cliTools.h">

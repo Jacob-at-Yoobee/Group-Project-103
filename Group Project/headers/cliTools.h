@@ -59,3 +59,5 @@ public:
 
   double getNumber(string _color = "", string _pre = "");
 };
+
+void Clear();

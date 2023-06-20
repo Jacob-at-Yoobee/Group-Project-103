@@ -2,25 +2,30 @@
 
 #include "config.h"
 
+enum UserType
+{
+  NullUser = 0,
+  Admin = 1,
+  Teacher = 2,
+  Parent = 3,
+};
+
 class Login
 {
 public:
   string username;
   string password;
 
-  int tyoe;
+  int type;
+  string id;
 };
 
-struct item
+struct User
 {
   Login login;
+  int attempts = 0;
 };
 
-class dataBase
-{
+extern vector<User> db;
 
-public:
-  Login logins[100];
-};
-
-vector<item> db;
+extern User currentlyLogedinUser;

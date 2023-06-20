@@ -30,7 +30,36 @@ int MenuRegister::execute()
 
 		cout << endl << "Password: ";
 		
+		cout << endl;
 		system("pause");
+		system("CLS");
+		break;
+	case 2:
+		cout << "Parent Registration" << endl << endl;
+		cout << endl << "Full Name: ";
+
+		cout << endl << "Gender: ";
+
+		cout << endl << "Date of Birth: ";
+
+		cout << endl << "Email: ";
+
+		cout << endl << "Contact Number: ";
+
+		cout << endl << "Child Full Name(s): ";
+
+		cout << endl << "Child(s) Classroom Number: ";
+
+		cout << endl << "Parent/Caregiver Emergency Contact Number: ";
+
+		cout << endl << "Username: ";
+
+		cout << endl << "Password: ";
+
+		cout << endl;
+		system("pause");
+		system("CLS");
+		break;
 	}
 
   return 0;

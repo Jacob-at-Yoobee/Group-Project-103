@@ -8,4 +8,5 @@ class Login;
 
 extern Color C;
 extern GetInput getInput;
-extern void Clear();
+void Clear();
+void waitForKeyPress();

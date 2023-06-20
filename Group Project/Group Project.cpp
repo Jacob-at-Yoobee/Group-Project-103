@@ -4,12 +4,14 @@
 
 #include "headers/Menu_login.h"
 #include "headers/Menu_register.h"
+#include "headers/Menu_event.h"
+#include "headers/Menu_contact.h"
 
 using namespace std;
 
 void displayMenu()
 {
-    cout << "Menu:" << endl;
+    cout << "Welcome to Yoobee's Info System" << endl << endl;
     cout << "1. Login" << endl;
     cout << "2. Register" << endl;
     cout << "3. Upcoming Events" << endl;
@@ -23,6 +25,8 @@ int main()
 
     MenuLogin MenuLogin;
     MenuRegister MenuRegister;
+    MenuEvent MenuEvent;
+    MenuContact MenuContact;
 
     do
     {
@@ -38,6 +42,12 @@ int main()
             break;
         case 2:
             MenuRegister.execute();
+            break;
+        case 3:
+            MenuEvent.execute();
+            break;
+        case 4:
+            MenuContact.execute();
             break;
         }
 

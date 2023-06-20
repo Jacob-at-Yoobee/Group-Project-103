@@ -140,7 +140,8 @@
   <ItemGroup>
     <ClCompile Include="Group Project.cpp" />
     <ClInclude Include="headers\cliTools.h" />
-    <ClCompile Include="Teacher_home_screen.cpp" />
+    <ClCompile Include="source\Teacher_home_screen.cpp" />
+    <ClCompile Include="headers\Teacher_home_screen.h" />
     <ClCompile Include="source\cliTools.cpp" />
     <ClCompile Include="source\Menu_contact.cpp" />
     <ClCompile Include="source\Menu_event.cpp" />

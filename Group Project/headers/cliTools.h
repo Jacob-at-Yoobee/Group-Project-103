@@ -61,3 +61,6 @@ public:
 };
 
 void Clear();
+void waitForKeyPress();
+
+// void mySleep(int ms);

@@ -8,7 +8,8 @@ int TeacherMenu::execute()
 	string name;
 	cout << "what is your name?\n";
 	cin >> name;
-	cout << "\n" << "Welcome " << name << "\n";
+	cout << "\n"
+			 << "Welcome " << name << "\n";
 	int selection;
 	while (selection != 2)
 	{
@@ -29,4 +30,5 @@ int TeacherMenu::execute()
 			cout << "\nInvalid choice!\n";
 		}
 	}
+	return 0;
 }

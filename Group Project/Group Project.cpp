@@ -70,6 +70,7 @@ int main()
     {
 
         Clear();
+        bool logedIn = currentlyLogedinUser.login.type != UserType::NullUser;
 
         displayMenu();
         cout << "Enter a number: ";
@@ -78,17 +79,27 @@ int main()
         switch (choice)
         {
         case 1:
-            if (currentlyLogedinUser.login.type == UserType::NullUser)
-            {
-                MenuLogin.execute();
-            }
-            else
+            if (logedIn)
             {
                 currentlyLogedinUser = NullUser;
             }
+            else
+            {
+                MenuLogin.execute();
+            }
+
             break;
         case 2:
-            MenuRegister.execute();
+            if (logedIn)
+            {
+                cout << "You are already logged in!" << endl;
+                break;
+            }
+            else
+            {
+                MenuRegister.execute();
+            }
+
             break;
         case 3:
             MenuEvent.execute();

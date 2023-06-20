@@ -1,6 +1,5 @@
 #include "../headers/Menu_login.h"
 // #include "../headers/config.h"
-#include <unistd.h>
 
 using namespace std;
 
@@ -63,7 +62,7 @@ int MenuLogin::execute()
 
     currentlyLogedinUser = db[i];
 
-    sleep(2);
+    waitForKeyPress();
     Clear();
     return db[i].login.type;
   }

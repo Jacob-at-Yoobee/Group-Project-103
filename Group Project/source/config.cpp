@@ -2,4 +2,3 @@
 
 Color C;
 GetInput getInput;
-void Clear();

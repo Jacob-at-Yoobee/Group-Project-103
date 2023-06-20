@@ -124,16 +124,27 @@ void Clear() // clear the console
 {
 #if defined _WIN32
   system("cls");
-#elif defined(__LINUX__) || defined(__gnu_linux__) || defined(__linux__)
-  system("clear");
-#elif defined(__APPLE__)
+#elif defined(__LINUX__) || defined(__gnu_linux__) || defined(__linux__) || defined(__APPLE__)
   system("clear");
 #endif
 }
 
 void waitForKeyPress()
 {
-  cout << internalColor.brightYellow("Press enter to continue...");
-  // cin.ignore();
+  cout << "Press any key to continue...";
   cin.get();
 }
+
+// void mySleep(int ms)
+// {
+// #if defined _WIN32
+// #include <windows.h>
+
+//   Sleep(ms);
+
+// #elif defined(__LINUX__) || defined(__gnu_linux__) || defined(__linux__) || defined(__APPLE__)
+// #include <unistd.h>
+
+//   sleep(ms /1000);
+// #endif
+// }

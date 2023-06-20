@@ -31,8 +31,8 @@ int MenuRegister::execute()
 		cout << endl << "Password: ";
 		
 		cout << endl;
-		system("pause");
-		system("CLS");
+		waitForKeyPress();
+		Clear();
 		break;
 	case 2:
 		cout << "Parent Registration" << endl << endl;
@@ -57,8 +57,8 @@ int MenuRegister::execute()
 		cout << endl << "Password: ";
 
 		cout << endl;
-		system("pause");
-		system("CLS");
+		waitForKeyPress();
+		Clear();
 		break;
 	}
 

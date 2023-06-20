@@ -19,6 +19,16 @@ void displayMenu()
 
 int main()
 {
+
+    Login login1;
+    login1.username = "admin";
+    login1.password = "admin";
+    login1.type = 1;
+
+    
+
+
+
     int choice;
 
     MenuLogin MenuLogin;

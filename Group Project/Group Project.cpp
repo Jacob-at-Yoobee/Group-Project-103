@@ -7,6 +7,8 @@
 
 using namespace std;
 
+//By Jacob Rosner, Arthur Werner and William Giles
+
 void displayMenu()
 {
     cout << "Menu:" << endl;

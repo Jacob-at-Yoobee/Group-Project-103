@@ -21,10 +21,25 @@
     <ClCompile Include="source\cliTools.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\login.cpp">
+    <ClCompile Include="source\Menu_login.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\register.cpp">
+    <ClCompile Include="source\Menu_register.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\db.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Menu_event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Menu_contact.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Teacher_home_screen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +47,22 @@
     <ClInclude Include="headers\cliTools.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\login.h">
+    <ClInclude Include="headers\Menu_login.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\register.h">
+    <ClInclude Include="headers\Menu_register.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\db.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Menu_event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Menu_contact.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

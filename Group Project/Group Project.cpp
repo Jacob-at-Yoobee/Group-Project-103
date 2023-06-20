@@ -12,7 +12,7 @@
 
 using namespace std;
 
-//By Jacob Rosner, Arthur Werner and William Giles
+// By Jacob Rosner, Arthur Werner and William Giles
 
 void displayMenu()
 {
@@ -69,6 +69,8 @@ int main()
     do
     {
 
+        Clear();
+
         displayMenu();
         cout << "Enter a number: ";
         choice = getInput.getNumber(C.Green);
@@ -79,7 +81,9 @@ int main()
             if (currentlyLogedinUser.login.type == UserType::NullUser)
             {
                 MenuLogin.execute();
-            } else {
+            }
+            else
+            {
                 currentlyLogedinUser = NullUser;
             }
             break;

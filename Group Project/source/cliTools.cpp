@@ -130,3 +130,10 @@ void Clear() // clear the console
   system("clear");
 #endif
 }
+
+void waitForKeyPress()
+{
+  cout << internalColor.brightYellow("Press enter to continue...");
+  // cin.ignore();
+  cin.get();
+}

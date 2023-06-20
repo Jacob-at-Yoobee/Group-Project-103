@@ -5,7 +5,7 @@
 
 
 
-class TeacherLogin
+class TeacherMenu
 {
 
 public:

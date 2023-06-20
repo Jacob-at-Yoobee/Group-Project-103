@@ -6,12 +6,13 @@
 #include "headers/Menu_register.h"
 #include "headers/Menu_event.h"
 #include "headers/Menu_contact.h"
+#include "headers/Teacher_home_screen.h"
 
 // vector<Item> db;
 
 using namespace std;
 
-//By Jacob Rosner, Arthur Werner and William Giles
+// By Jacob Rosner, Arthur Werner and William Giles
 
 void displayMenu()
 {
@@ -63,9 +64,12 @@ int main()
     MenuRegister MenuRegister;
     MenuEvent MenuEvent;
     MenuContact MenuContact;
+    TeacherMenu TeacherMenu;
 
     do
     {
+
+        Clear();
 
         displayMenu();
         cout << "Enter a number: ";
@@ -77,7 +81,9 @@ int main()
             if (currentlyLogedinUser.login.type == UserType::NullUser)
             {
                 MenuLogin.execute();
-            } else {
+            }
+            else
+            {
                 currentlyLogedinUser = NullUser;
             }
             break;

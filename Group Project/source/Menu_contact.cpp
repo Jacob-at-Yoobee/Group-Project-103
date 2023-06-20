@@ -5,12 +5,12 @@ using namespace std;
 
 int MenuContact::execute()
 {
-	system("CLS");
-	cout << C.red("School Contact Details:") << endl << endl;
+	Clear();
+	cout << C.red("School Contact Details:") << endl
+			 << endl;
 	cout << C.brightBlue("Email : contact.us@yoobeecollege.co.nz") << endl;
 	cout << C.brightBlue("Phone Number : 021 837 0394") << endl;
-	system("pause");
-	system("CLS");
+	waitForKeyPress();
 
 	return 0;
 }

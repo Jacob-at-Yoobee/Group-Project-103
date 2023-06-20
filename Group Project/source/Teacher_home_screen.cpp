@@ -1,8 +1,9 @@
-#include <iostream>
+#include "../headers/Teacher_home_screen.h"
+#include "../headers/config.h"
 
 using namespace std;
 
-int teacherMenu()
+int TeacherMenu::execute()
 {
 	string name;
 	cout << "what is your name?\n";
@@ -17,7 +18,7 @@ int teacherMenu()
 		cin >> selection;
 		if (selection == 1)
 		{
-			studentRecords();
+			// studentRecords();
 		}
 		else if (selection == 2)
 		{

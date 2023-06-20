@@ -9,6 +9,8 @@
 
 using namespace std;
 
+//By Jacob Rosner, Arthur Werner and William Giles
+
 void displayMenu()
 {
     cout << "Welcome to Yoobee's Info System" << endl << endl;

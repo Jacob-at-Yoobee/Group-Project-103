@@ -4,10 +4,14 @@
 
 #include "headers/Menu_login.h"
 #include "headers/Menu_register.h"
+#include "headers/Menu_event.h"
+#include "headers/Menu_contact.h"
 
 // vector<Item> db;
 
 using namespace std;
+
+//By Jacob Rosner, Arthur Werner and William Giles
 
 void displayMenu()
 {
@@ -57,6 +61,8 @@ int main()
 
     MenuLogin MenuLogin;
     MenuRegister MenuRegister;
+    MenuEvent MenuEvent;
+    MenuContact MenuContact;
 
     do
     {
@@ -77,6 +83,12 @@ int main()
             break;
         case 2:
             MenuRegister.execute();
+            break;
+        case 3:
+            MenuEvent.execute();
+            break;
+        case 4:
+            MenuContact.execute();
             break;
         }
 

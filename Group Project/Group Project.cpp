@@ -6,6 +6,7 @@
 #include "headers/Menu_register.h"
 #include "headers/Menu_event.h"
 #include "headers/Menu_contact.h"
+#include "headers/Teacher_home_screen.h"
 
 // vector<Item> db;
 
@@ -63,6 +64,7 @@ int main()
     MenuRegister MenuRegister;
     MenuEvent MenuEvent;
     MenuContact MenuContact;
+    TeacherMenu TeacherMenu;
 
     do
     {

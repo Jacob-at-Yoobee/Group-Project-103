@@ -1,8 +1,8 @@
 #include <iostream>
 
-#include "cliTools.h"
-#include "db.h"
-#include "color.h"
+#include "header/cliTools.h"
+#include "header/db.h"
+#include "header/color.h"
 
 #include "header/Menu_login.h"
 #include "header/Menu_register.h"

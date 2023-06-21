@@ -1,5 +1,5 @@
 #include "../headers/cliTools.h"
-
+#include <iostream>
 Color::Color()
 {
   Red = "\033[31m";
@@ -134,9 +134,7 @@ void Utils::waitForKeyPress()
   cin.get();
 }
 
-Color C;
-GetInput getInput;
-Utils utils;
+
 
 // namespace CLI
 // {

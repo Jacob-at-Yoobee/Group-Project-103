@@ -1,6 +1,6 @@
 #pragma once
 
-#include "config.h"
+//#include "config.h"
 #include <string>
 
 using namespace std;
@@ -54,6 +54,8 @@ struct Color
   string bold(string x);
 };
 
+extern Color internalColor;
+
 class GetInput
 {
 public:
@@ -72,9 +74,7 @@ public:
 // void Clear();
 // void waitForKeyPress();
 
-extern Color C;
-extern GetInput getInput;
-extern Utils utils;
+
 
 // namespace CLI
 // {

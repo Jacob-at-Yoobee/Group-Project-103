@@ -25,9 +25,7 @@ public:
 struct User
 {
   Login login;
-  int attempts = 0;
+  int attempts;
 };
 
-extern vector<User> db;
 
-extern User currentlyLogedinUser;

@@ -139,8 +139,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Group Project.cpp" />
-    <ClCompile Include="source\config.cpp" />
-    <ClInclude Include="header\config.h" />
     <ClCompile Include="source\cliTools.cpp" />
     <ClInclude Include="header\cliTools.h" />
     <ClCompile Include="source\db.cpp" />
@@ -157,7 +155,6 @@
     <ClInclude Include="header\Menu_login.h" />
     <ClCompile Include="source\Menu_register.cpp" />
     <ClInclude Include="header\Menu_register.h" />
-
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

@@ -3,7 +3,7 @@
 int MenuRegister::execute()
 {
 	int userOccupation;
-	cout << C.blue("Occupation") << endl
+	cout << ("Occupation") << endl
 			 << "1)Teacher\n2)Parent";
 	cin >> userOccupation;
 	switch (userOccupation)

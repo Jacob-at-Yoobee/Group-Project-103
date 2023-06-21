@@ -10,17 +10,17 @@ int MenuLogin::execute()
        << endl;
 
   cout << "Enter username: ";
-  username = getInput.getString(C.Green);
+  username = getInput.getString();
 
   // TODO - hide password
 
   cout << "Enter password: ";
-  password = getInput.getString(C.Red);
+  password = getInput.getString();
 
   cout << password << endl;
 
   // TODO - check if username and password match
-  cout << C.yellow("Logging in...") << endl;
+  cout << ("Logging in...") << endl;
 
   for (int i = 0; i < db.size(); i++)
   {
@@ -38,14 +38,14 @@ int MenuLogin::execute()
 
     if (db[i].attempts >= 3)
     {
-      cout << C.red(C.bold("You have exceeded the number of attempts!")) << endl;
+      cout << ("You have exceeded the number of attempts!") << endl;
 
       return 0;
     }
 
     if (db[i].login.password != password)
     {
-      cout << C.red(C.bold("Invalid password!")) << endl;
+      cout << ("Invalid password!") << endl;
 
       db[i].attempts++;
 
@@ -53,7 +53,7 @@ int MenuLogin::execute()
       ;
     }
 
-    cout << C.green("Logged in!") << endl;
+    cout << ("Logged in!") << endl;
 
     cout << "Welcome, " << db[i].login.id << "!" << endl;
 
@@ -64,7 +64,7 @@ int MenuLogin::execute()
     return db[i].login.type;
   }
 
-  cout << C.red(C.bold("Invalid username or password!")) << endl;
+  cout << ("Invalid username or password!") << endl;
 
   return 0;
 }

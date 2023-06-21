@@ -13,6 +13,30 @@ enum UserType
   Parent = 3,
 };
 
+enum Gender
+{
+  Male,
+  Female
+};
+
+class Student
+{
+public:
+  string name;
+  string id;
+  string dob;
+  Gender gender;
+
+  float math;
+  float science;
+  float english;
+  float writing;
+  float reading;
+  float other;
+
+  string learningProgress;
+};
+
 class Login
 {
 public:
@@ -23,10 +47,14 @@ public:
   string id;
 };
 
-struct User
+class User
 {
+public:
   Login login;
   int attempts;
+
+  string id;
+  string name;
 };
 
 extern vector<User> db;

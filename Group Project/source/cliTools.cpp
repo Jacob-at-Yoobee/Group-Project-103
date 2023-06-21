@@ -1,5 +1,4 @@
 #include "../headers/cliTools.h"
-#include <string>
 
 Color::Color()
 {
@@ -120,7 +119,7 @@ double GetInput::getNumber(string _color, string _pre)
   return number;
 }
 
-void Clear() // clear the console
+void Utils::clear() // clear the console
 {
 #if defined _WIN32
   system("cls");
@@ -129,22 +128,17 @@ void Clear() // clear the console
 #endif
 }
 
-void waitForKeyPress()
+void Utils::waitForKeyPress()
 {
   cout << "Press any key to continue...";
   cin.get();
 }
 
-// void mySleep(int ms)
+Color C;
+GetInput getInput;
+Utils utils;
+
+// namespace CLI
 // {
-// #if defined _WIN32
-// #include <windows.h>
-
-//   Sleep(ms);
-
-// #elif defined(__LINUX__) || defined(__gnu_linux__) || defined(__linux__) || defined(__APPLE__)
-// #include <unistd.h>
-
-//   sleep(ms /1000);
-// #endif
+//   Color colorTest;
 // }

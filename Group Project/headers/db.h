@@ -2,6 +2,8 @@
 
 #include "config.h"
 
+using namespace std;
+
 enum UserType
 {
   NullUser = 0,

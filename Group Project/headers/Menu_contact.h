@@ -1,7 +1,8 @@
 #pragma once
 
-// #include "config.h"
-#include <iostream>
+#include "config.h"
+
+using namespace std;
 
 class MenuContact
 {

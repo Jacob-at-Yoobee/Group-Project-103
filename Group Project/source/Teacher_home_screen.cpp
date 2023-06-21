@@ -1,7 +1,4 @@
 #include "../headers/Teacher_home_screen.h"
-#include "../headers/config.h"
-
-using namespace std;
 
 int TeacherMenu::execute()
 {

@@ -1,13 +1,10 @@
 #include "../headers/Menu_login.h"
-// #include "../headers/config.h"
-
-using namespace std;
 
 int MenuLogin::execute()
 {
   string username, password;
 
-  Clear();
+  utils.clear();
 
   cout << "Login" << endl
        << endl;
@@ -62,8 +59,8 @@ int MenuLogin::execute()
 
     currentlyLogedinUser = db[i];
 
-    waitForKeyPress();
-    Clear();
+    utils.waitForKeyPress();
+    utils.clear();
     return db[i].login.type;
   }
 

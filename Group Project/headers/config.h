@@ -1,10 +1,9 @@
 #pragma once
 
+#include <iostream>
+
 #include "cliTools.h"
 #include "db.h"
 #include <vector>
 
-extern Color C;
-extern GetInput getInput;
-
-
+using namespace std;

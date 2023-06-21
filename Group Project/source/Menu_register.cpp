@@ -4,7 +4,7 @@ int MenuRegister::execute()
 {
 	int userOccupation;
 	cout << ("Occupation") << endl
-			 << "1)Teacher\n2)Parent";
+			 << "1)Teacher\n2)Parent: ";
 	cin >> userOccupation;
 	switch (userOccupation)
 	{

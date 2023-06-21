@@ -1,8 +1,8 @@
-#include <iostream>
+#include "../header/Student_records.h"
 
 using namespace std;
 
-void studentRecords()
+int StudentRecord::execute()
 {
 	int opt;
 	cout << "Student Rcords\n";
@@ -36,6 +36,7 @@ void studentRecords()
 	else
 	{
 		cout << "\nInalid Choice!\n";
-		studentRecords();
+		StudentRecord();
 	}
+	return 0;
 }

@@ -1,6 +1,7 @@
 #pragma once
 
-#include "config.h"
+#include <vector>
+#include <string>
 
 using namespace std;
 
@@ -28,4 +29,5 @@ struct User
   int attempts;
 };
 
-
+extern vector<User> db;
+extern User currentlyLogedinUser;

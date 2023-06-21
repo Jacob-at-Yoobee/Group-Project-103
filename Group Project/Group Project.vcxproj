@@ -139,22 +139,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Group Project.cpp" />
-    <ClInclude Include="headers\cliTools.h" />
-    <ClCompile Include="source\Teacher_home_screen.cpp" />
-    <ClCompile Include="headers\Teacher_home_screen.h" />
-    <ClCompile Include="source\cliTools.cpp" />
-    <ClCompile Include="source\Menu_contact.cpp" />
-    <ClCompile Include="source\Menu_event.cpp" />
-    <ClCompile Include="source\Menu_login.cpp" />
-    <ClInclude Include="headers\Menu_contact.h" />
-    <ClInclude Include="headers\Menu_event.h" />
-    <ClInclude Include="headers\Menu_login.h" />
-    <ClCompile Include="source\Menu_register.cpp" />
-    <ClInclude Include="headers\Menu_register.h" />
     <ClCompile Include="source\config.cpp" />
-    <ClInclude Include="headers\config.h" />
-    <ClInclude Include="headers\db.h" />
+    <ClInclude Include="header\config.h" />
+    <ClCompile Include="source\cliTools.cpp" />
+    <ClInclude Include="header\cliTools.h" />
     <ClCompile Include="source\db.cpp" />
+    <ClInclude Include="header\db.h" />
+    <ClInclude Include="source\color.cpp" />
+    <ClInclude Include="header\color.h" />
+    <ClCompile Include="source\Teacher_home_screen.cpp" />
+    <ClCompile Include="header\Teacher_home_screen.h" />
+    <ClCompile Include="source\Menu_contact.cpp" />
+    <ClInclude Include="header\Menu_contact.h" />
+    <ClCompile Include="source\Menu_event.cpp" />
+    <ClInclude Include="header\Menu_event.h" />
+    <ClCompile Include="source\Menu_login.cpp" />
+    <ClInclude Include="header\Menu_login.h" />
+    <ClCompile Include="source\Menu_register.cpp" />
+    <ClInclude Include="header\Menu_register.h" />
+
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

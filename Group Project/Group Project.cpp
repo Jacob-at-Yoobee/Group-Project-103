@@ -1,10 +1,10 @@
-#include "headers/config.h"
+#include "header/config.h"
 
-#include "headers/Menu_login.h"
-#include "headers/Menu_register.h"
-#include "headers/Menu_event.h"
-#include "headers/Menu_contact.h"
-// #include "headers/Teacher_home_screen.h"
+#include "header/Menu_login.h"
+#include "header/Menu_register.h"
+#include "header/Menu_event.h"
+#include "header/Menu_contact.h"
+// #include "header/Teacher_home_screen.h"
 
 // By Jacob Rosner, Arthur Werner and William Giles
 

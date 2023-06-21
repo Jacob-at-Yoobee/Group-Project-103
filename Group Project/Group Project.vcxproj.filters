@@ -44,25 +44,25 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers\cliTools.h">
+    <ClInclude Include="header\cliTools.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\Menu_login.h">
+    <ClInclude Include="header\Menu_login.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\Menu_register.h">
+    <ClInclude Include="header\Menu_register.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\config.h">
+    <ClInclude Include="header\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\db.h">
+    <ClInclude Include="header\db.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\Menu_event.h">
+    <ClInclude Include="header\Menu_event.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\Menu_contact.h">
+    <ClInclude Include="header\Menu_contact.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

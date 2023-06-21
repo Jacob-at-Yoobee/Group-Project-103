@@ -1,4 +1,4 @@
-#include "../headers/Teacher_home_screen.h"
+#include "../header/Teacher_home_screen.h"
 
 int TeacherMenu::execute()
 {

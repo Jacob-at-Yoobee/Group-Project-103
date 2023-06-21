@@ -1,7 +1,6 @@
 #pragma once
 
-//#include "config.h"
-#include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -54,29 +53,4 @@ struct Color
   string bold(string x);
 };
 
-extern Color internalColor;
-
-class GetInput
-{
-public:
-  string getString(string _color = "", string _pre = "");
-
-  double getNumber(string _color = "", string _pre = "");
-};
-
-class Utils
-{
-public:
-  void clear();
-  void waitForKeyPress();
-};
-
-// void Clear();
-// void waitForKeyPress();
-
-
-
-// namespace CLI
-// {
-//   extern Color colorTest;
-// }
+extern Color C;

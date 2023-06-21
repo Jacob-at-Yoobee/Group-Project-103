@@ -9,7 +9,6 @@
 #include "header/Menu_event.h"
 #include "header/Menu_contact.h"
 #include "header/Teacher_home_screen.h"
-
 // #include "header/Teacher_home_screen.h"
 
 // By Jacob Rosner, Arthur Werner and William Giles
@@ -67,7 +66,6 @@ int main()
     MenuEvent MenuEvent;
     MenuContact MenuContact;
     TeacherMenu TeacherMenu;
-    
 
     int choice;
 

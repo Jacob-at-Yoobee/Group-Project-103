@@ -1,5 +1,5 @@
 #include "../header/Menu_login.h"
-
+#include "../header/Teacher_home_screen.h"
 
 int MenuLogin::execute()
 {
@@ -14,11 +14,6 @@ int MenuLogin::execute()
   cout << "Enter username: ";
   username = getInput.getString();
 
-    if (username == "teacher") 
-    {
-        TeacherMenu.execute();
-        return 0;
-    }
   // TODO - hide password
 
   cout << "Enter password: ";
@@ -31,7 +26,11 @@ int MenuLogin::execute()
 
   for (int i = 0; i < db.size(); i++)
   {
-    //Temp Teacher Login
+
+    if (username == "teacher") 
+    {
+        TeacherMenu.execute();
+    }
 
     if (db[i].login.type == NullUser)
     {

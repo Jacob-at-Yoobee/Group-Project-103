@@ -7,16 +7,25 @@ using namespace std;
 
 enum UserType
 {
-  NullUser = 0,
-  Admin = 1,
-  Teacher = 2,
-  Parent = 3,
+  NullUser,
+  Admin,
+  Teacher,
+  Parent,
 };
 
 enum Gender
 {
   Male,
   Female
+};
+
+class Login
+{
+public:
+  string username;
+  string password;
+
+  string id;
 };
 
 class Student
@@ -37,14 +46,38 @@ public:
   string learningProgress;
 };
 
-class Login
+class ClassRoom
 {
 public:
-  string username;
-  string password;
+  Student students[30];
+  int classRoomNumber;
+};
 
-  int type;
+class Teacher
+{
+  string name;
   string id;
+  ClassRoom classRoom;
+  Login login;
+};
+
+class Parent
+{
+  string name;
+  string id;
+  Login login;
+
+  string email;
+  string dob;
+
+  vector<Student> children;
+};
+
+class Admin
+{
+  string name;
+  string id;
+  Login login;
 };
 
 class User
@@ -52,6 +85,12 @@ class User
 public:
   Login login;
   int attempts;
+
+  int type;
+
+  class ::Parent parent;
+  class ::Teacher teacher;
+  class ::Admin admin;
 
   string id;
   string name;

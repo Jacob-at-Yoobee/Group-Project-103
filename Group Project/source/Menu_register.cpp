@@ -4,8 +4,24 @@ int MenuRegister::execute()
 {
 	int userOccupation;
 	cout << ("Occupation") << endl
-			 << "1)Teacher\n2)Parent: ";
-	cin >> userOccupation;
+			 << "1) Teacher" << endl
+			 << "2) Parent: ";
+
+	userOccupation = getInput.getNumber();
+
+	string genderString;
+
+	string fullName;
+	Gender gender;
+	string dob;
+	string email;
+	string contactNumber;
+	string childFullName;
+	string childClassroomNumber;
+	string emergencyContactNumber;
+	string username;
+	string password;
+
 	switch (userOccupation)
 	{
 	case 1:
@@ -14,29 +30,42 @@ int MenuRegister::execute()
 		cout << endl
 				 << "Full Name: ";
 
+		fullName = getInput.getString();
 		cout << endl
-				 << "Gender: ";
+				 << "Gender(male/female): ";
+		genderString = getInput.getString();
+		if (genderString.find("female") != std::string::npos)
+			gender = Female;
+		else
+			gender = Male;
 
-		cout << endl
-				 << "Date of Birth: ";
+		cout
+				<< endl
+				<< "Date of Birth: ";
+		dob = getInput.getString();
 
 		cout << endl
 				 << "Email: ";
+		email = getInput.getString();
 
 		cout << endl
 				 << "Contact Number: ";
+		contactNumber = getInput.getString();
 
 		cout << endl
 				 << "Classroom Number: ";
+		childClassroomNumber = getInput.getString();
 
 		cout << endl
 				 << "Teaching Year(eg: year 1): ";
 
 		cout << endl
 				 << "Username: ";
+		username = getInput.getString();
 
 		cout << endl
 				 << "Password: ";
+		password = getInput.getString();
 
 		cout << endl;
 		utils.waitForKeyPress();

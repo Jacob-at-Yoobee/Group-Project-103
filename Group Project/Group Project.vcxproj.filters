@@ -42,6 +42,9 @@
     <ClCompile Include="header\Teacher_home_screen.h">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\Student_records.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\cliTools.h">
@@ -66,6 +69,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="header\color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Student_records.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

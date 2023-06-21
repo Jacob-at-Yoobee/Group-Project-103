@@ -2,32 +2,30 @@
 
 int TeacherMenu::execute()
 {
+	StudentRecord StudentRecord;
 	string name;
 	cout << "what is your name?\n";
-	cin >> name;
+	name = getInput.getString();
 	cout << "\n"
 			 << "Welcome " << name << "\n";
 	int selection;
 	do
 	{
-		cin >> selection;
 		cout << "1) Student Records\n";
 		cout << "2) Exit\n";
 		cout << "Enter selection: ";
+		selection = getInput.getNumber();
 
 		if (selection == 1)
 		{
-			//studentRecords();
-		}
-		else if (selection == 2)
-		{
-			cout << "\nGoodbye!";
+			StudentRecord.execute();
 		}
 		else
 		{
 			cout << "\nInvalid choice!\n";
 		}
 	} while (selection != 2);
+	cout << "\nGoodbye!";
 
 	return 0;
 }

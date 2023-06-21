@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+
 using namespace std;
 
 struct Color
@@ -52,12 +53,4 @@ struct Color
   string bold(string x);
 };
 
-class GetInput
-{
-public:
-  string getString(string _color = "", string _pre = "");
-
-  double getNumber(string _color = "", string _pre = "");
-};
-
-void Clear();
+extern Color C;

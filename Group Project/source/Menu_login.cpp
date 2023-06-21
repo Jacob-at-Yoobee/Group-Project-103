@@ -1,7 +1,9 @@
 #include "../header/Menu_login.h"
+#include "../header/Teacher_home_screen.h"
 
 int MenuLogin::execute()
 {
+   TeacherMenu TeacherMenu;
   string username, password;
 
   utils.clear();
@@ -24,6 +26,12 @@ int MenuLogin::execute()
 
   for (int i = 0; i < db.size(); i++)
   {
+
+    if (username == "teacher") 
+    {
+        TeacherMenu.execute();
+    }
+
     if (db[i].login.type == NullUser)
     {
       continue;

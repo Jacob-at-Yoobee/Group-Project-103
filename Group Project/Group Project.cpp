@@ -1,4 +1,8 @@
-#include "header/config.h"
+#include <iostream>
+
+#include "cliTools.h"
+#include "db.h"
+#include "color.h"
 
 #include "header/Menu_login.h"
 #include "header/Menu_register.h"

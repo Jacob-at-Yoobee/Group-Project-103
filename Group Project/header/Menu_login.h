@@ -1,6 +1,10 @@
 #pragma once
 
-#include "config.h"
+#include <iostream>
+
+#include "cliTools.h"
+#include "db.h"
+
 
 using namespace std;
 

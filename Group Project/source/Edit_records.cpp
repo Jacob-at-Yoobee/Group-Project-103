@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include "../header/Edit_records.h"
+
 
 using namespace std;
 
@@ -13,19 +15,19 @@ int editRecords()
 	int others;
 	string learningProgress;
 	cout << "Enter the student's name: ";
-	cin >> name;
+	name = getInput.getString();
 	cout << "\nWhat is " << name << "'s score in maths out of 100? ";
-	cin >> maths;
+	maths = getInput.getNumber();
 	cout << "\nWhat is " << name << "'s score in science out of 100? ";
-	cin >> science;
+	science = getInput.getNumber();
 	cout << "\nWhat is " << name << "'s score in writing out of 100? ";
-	cin >> writing;
+	writing = getInput.getNumber();
 	cout << "\nWhat is " << name << "'s score in reading out of 100? ";
-	cin >> reading;
+	reading = getInput.getNumber();
 	cout << "\nWhat is " << name << "'s score in other areas out of 100? ";
-	cin >> others;
+	others = getInput.getNumber();
 	cout << "\nHow is " << name << " doing in terms of learning? Answer with achieved, needs help or progressing ";
-	getline(cin, learningProgress);
+	learningProgress = getInput.getString();
 	if (learningProgress == "Achieved")
 	{
 		cout << "\nIt's good to hear that " << name << " is doing ok with their work\n";

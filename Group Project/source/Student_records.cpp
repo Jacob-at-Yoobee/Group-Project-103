@@ -12,7 +12,7 @@ int StudentRecord::execute()
 	cout << "4) Update Record\n";
 	cout << "5) View the Records\n";
 	cout << "Enter a number: ";
-	cin >> opt;
+	opt = getInput.getNumber();
 	if (opt == 1)
 	{
 		//addStudent();

@@ -4,6 +4,6 @@
 
 #include "cliTools.h"
 #include "db.h"
-#include "color.h"
+//#include "color.h"
 
 using namespace std;

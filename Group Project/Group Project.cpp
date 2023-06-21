@@ -76,7 +76,7 @@ int main()
         displayMenu(logedIn);
 
         cout << "Enter a number: ";
-        choice = getInput.getNumber(C.Green);
+        choice = getInput.getNumber();
 
         switch (choice)
         {
@@ -107,5 +107,5 @@ int main()
 
     } while (choice != 5);
 
-    cout << C.brightRed("Exiting...") << "\n";
+    cout << ("Exiting...") << "\n";
 }

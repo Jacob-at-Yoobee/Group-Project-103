@@ -1,5 +1,5 @@
 #include "../header/cliTools.h"
-#include "../header/color.h"
+#include <string>
 
 string GetInput::getString(string _color, string _pre)
 {
@@ -11,10 +11,9 @@ string GetInput::getString(string _color, string _pre)
 
   if (input.length() == 0)
   {
-    cout << C.red("Invalid input. Please enter a string: ");
+    cout << ("Invalid input. Please enter a string: ");
     input = getString(_color, _pre);
   }
-  cout << C.Reset;
 
   return input;
 }
@@ -35,10 +34,9 @@ double GetInput::getNumber(string _color, string _pre)
   }
   catch (const exception &e)
   {
-    cout << C.red("Invalid input. Please enter a number: ");
+    cout << "Invalid input. Please enter a number: ";
     number = getNumber(_color, _pre);
   }
-  cout << C.Reset;
 
   return number;
 }

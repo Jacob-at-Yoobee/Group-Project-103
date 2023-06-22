@@ -32,7 +32,7 @@ int AdminMenu::execute()
 		else if (selection == 4)
 		{
 			cout << "\nGoodbye!\n";
-			exit(0);
+			return(0);
 		}
 		else
 		{

@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 int StudentRecord::execute()
 {
 	utils.clear();

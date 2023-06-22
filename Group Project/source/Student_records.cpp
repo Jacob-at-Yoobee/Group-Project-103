@@ -2,6 +2,7 @@
 
 using namespace std;
 
+
 int StudentRecord::execute()
 {
 	utils.clear();
@@ -16,13 +17,11 @@ int StudentRecord::execute()
 	opt = getInput.getNumber();
 	if (opt == 1)
 	{
-		//addStudent();
-		//this->addStudent();
+		this->addStudent();
 	}
 	else if (opt == 2)
 	{
-		//editRecords();
-		//this->editStudent();
+		this->editStudent();
 	}
 	else if (opt == 3)
 	{
@@ -45,10 +44,38 @@ int StudentRecord::execute()
 }
 
 
-//void StudentRecord::addStudent() 
-//{
-
-//}
+void StudentRecord::addStudent() 
+{
+	string name;
+	string gender;
+	int maths;
+	int science;
+	int writing;
+	int reading;
+	int others;
+	string learningProgress;
+	cout << "Enter the student's name: ";
+	name = getInput.getString();
+	cout << "\nIs the student Male, female or non binary: ";
+	gender = getInput.getString();
+	if (gender != "male" || gender != "female" || gender != "non binary")
+	{
+		cout << "\nIs the student Male, female or non binary: ";
+	}
+	else
+	{
+		cout << "\nWhat is " << name << "'s score in maths out of 100? ";
+		maths = getInput.getNumber();
+		cout << "\nWhat is " << name << "'s score in science out of 100? ";
+		science = getInput.getNumber();
+		cout << "\nWhat is " << name << "'s score in writing out of 100? ";
+		writing = getInput.getNumber();
+		cout << "\nWhat is " << name << "'s score in reading out of 100? ";
+		reading = getInput.getNumber();
+		cout << "\nWhat is " << name << "'s score in other areas out of 100? ";
+		others = getInput.getNumber();
+	}
+}
 
 void StudentRecord::editStudent() 
 {

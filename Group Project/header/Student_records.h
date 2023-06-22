@@ -13,7 +13,7 @@ class StudentRecord
 public:
 	int execute();
 	//void addStudent();
-	//void editStudent();
+	void editStudent();
 	void deleteStudent();
 	//void updateStudent();
 	//void viewStudent();

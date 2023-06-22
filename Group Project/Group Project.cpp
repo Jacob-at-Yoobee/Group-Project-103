@@ -62,7 +62,7 @@ int main()
 
     currentlyLogedinUser = NullUser;
 
-    MenuLogin MenuLogin;
+    MenuLogin menuLogin;
     MenuRegister MenuRegister;
     MenuEvent MenuEvent;
     MenuContact MenuContact;
@@ -87,7 +87,7 @@ int main()
             if (logedIn)
                 currentlyLogedinUser = NullUser;
             else
-                MenuLogin.execute();
+                menuLogin.execute();
 
             break;
         case 2:

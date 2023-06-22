@@ -3,7 +3,7 @@
 
 int MenuLogin::execute()
 {
-   TeacherMenu TeacherMenu;
+   TeacherMenu teacherMenu;
   string username, password;
 
   utils.clear();
@@ -16,7 +16,7 @@ int MenuLogin::execute()
 
     if (username == "teacher") 
     {
-        TeacherMenu.execute();
+        teacherMenu.execute();
         return 0;
     }
   // TODO - hide password

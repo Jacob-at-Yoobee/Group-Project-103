@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int editRecords()
+void editRecords()
 {
 	string name;
 	int maths;

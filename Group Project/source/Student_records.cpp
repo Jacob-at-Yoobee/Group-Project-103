@@ -62,18 +62,18 @@ void StudentRecord::deleteStudent() {
 
 	cout << "Student's Name: ";
 
-	cout << "Student's Class: ";
+	cout << "\nStudent's Class: ";
 
 	//Add if statement to check if that student exists
 
 	//Else if student does exsist
-	cout << "Type 'Delete' to confirm! ";
+	cout << "\nType 'Delete' to confirm! ";
 	deleteStudent = getInput.getString();
 	deleteStudent[0] = toupper(deleteStudent[0]);
 	if (deleteStudent == "Delete") 
 	{
 		//Removes student from the files/database
-		cout << "Student's Record Removed!";
+		cout << "Student's Record Removed!\n";
 	}
 
 }

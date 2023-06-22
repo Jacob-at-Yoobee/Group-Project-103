@@ -6,8 +6,7 @@
 
 #include "header/Menu_login.h"
 #include "header/Menu_register.h"
-#include "header/Menu_event.h"
-#include "header/Menu_contact.h"
+#include "header/Menu_extra.h"
 #include "header/Teacher_home_screen.h"
 
 // #include "header/Teacher_home_screen.h"
@@ -16,7 +15,7 @@
 
 void displayMenu(bool logedIn = false)
 {
-    cout << "Menu:" << endl;
+    cout << "Welcome to Yoobee School Info System:" << endl;
     if (logedIn)
     {
         cout << "1. Logout" << endl;
@@ -64,8 +63,7 @@ int main()
 
     MenuLogin menuLogin;
     MenuRegister MenuRegister;
-    MenuEvent MenuEvent;
-    MenuContact MenuContact;
+    MenuExtra MenuExtra;
     TeacherMenu TeacherMenu;
     
 
@@ -101,10 +99,10 @@ int main()
 
             break;
         case 3:
-            MenuEvent.execute();
+            MenuExtra.execute(choice);
             break;
         case 4:
-            MenuContact.execute();
+            MenuExtra.execute(choice);
             break;
         }
 

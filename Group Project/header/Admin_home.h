@@ -6,9 +6,12 @@
 
 using namespace std;
 
-class MenuEvent
+class AdminMenu
 {
 
 public:
 	int execute();
+	void parentRecords();
+	void classRecords();
+	void studentReport();
 };

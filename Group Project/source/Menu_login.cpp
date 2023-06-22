@@ -1,9 +1,9 @@
 #include "../header/Menu_login.h"
 
-
 int MenuLogin::execute()
 {
-   TeacherMenu teacherMenu;
+   AdminMenu AdminMenu;
+   TeacherMenu TeacherMenu;
   string username, password;
 
   utils.clear();
@@ -13,12 +13,21 @@ int MenuLogin::execute()
 
   cout << "Enter username: ";
   username = getInput.getString();
-
+    
+  //Temp Teacher Login
     if (username == "teacher") 
     {
-        teacherMenu.execute();
+        TeacherMenu.execute();
         return 0;
     }
+
+    //Temp Admin Login
+    if (username == "admin")
+    {
+        AdminMenu.execute();
+        return 0;
+    }
+
   // TODO - hide password
 
   cout << "Enter password: ";
@@ -31,7 +40,7 @@ int MenuLogin::execute()
 
   for (int i = 0; i < db.size(); i++)
   {
-    //Temp Teacher Login
+    
 
     if (db[i].login.type == NullUser)
     {

@@ -30,10 +30,7 @@
     <ClCompile Include="source\db.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\Menu_event.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="source\Menu_contact.cpp">
+    <ClCompile Include="source\Menu_extra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="source\Teacher_home_screen.cpp">
@@ -43,9 +40,6 @@
       <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="source\Student_records.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="source\Edit_records.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="source\Admin_home.cpp">
@@ -65,10 +59,7 @@
     <ClInclude Include="header\db.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="header\Menu_event.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Menu_contact.h">
+    <ClInclude Include="header\Menu_extra.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="source\color.cpp">
@@ -78,9 +69,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="header\Student_records.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Edit_records.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="header\Admin_home.h">

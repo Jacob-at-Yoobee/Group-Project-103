@@ -15,6 +15,6 @@ public:
 	//void addStudent();
 	void editStudent();
 	void deleteStudent();
-	//void updateStudent();
-	//void viewStudent();
+	void updateStudent();
+	void viewStudent();
 };

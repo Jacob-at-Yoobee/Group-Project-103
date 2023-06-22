@@ -28,26 +28,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -145,18 +145,14 @@
     <ClInclude Include="header\cliTools.h" />
     <ClCompile Include="source\db.cpp" />
     <ClInclude Include="header\db.h" />
-    <ClInclude Include="header\Edit_records.h" />
     <ClInclude Include="header\Student_records.h" />
     <ClInclude Include="source\color.cpp" />
     <ClInclude Include="header\color.h" />
-    <ClCompile Include="source\Edit_records.cpp" />
     <ClCompile Include="source\Student_records.cpp" />
     <ClCompile Include="source\Teacher_home_screen.cpp" />
     <ClCompile Include="header\Teacher_home_screen.h" />
-    <ClCompile Include="source\Menu_contact.cpp" />
-    <ClInclude Include="header\Menu_contact.h" />
-    <ClCompile Include="source\Menu_event.cpp" />
-    <ClInclude Include="header\Menu_event.h" />
+    <ClCompile Include="source\Menu_extra.cpp" />
+    <ClInclude Include="header\Menu_extra.h" />
     <ClCompile Include="source\Menu_login.cpp" />
     <ClInclude Include="header\Menu_login.h" />
     <ClCompile Include="source\Menu_register.cpp" />

@@ -6,9 +6,11 @@
 
 using namespace std;
 
-class MenuContact
+class MenuExtra
 {
 
 public:
-	int execute();
+	int execute(int choice);
+	void displayContact();
+	void displayEvent();
 };

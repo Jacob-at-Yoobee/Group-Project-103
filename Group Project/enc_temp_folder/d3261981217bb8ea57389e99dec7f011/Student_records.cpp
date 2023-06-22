@@ -58,7 +58,7 @@ void StudentRecord::addStudent()
 	name = getInput.getString();
 	cout << "\nIs the student Male, female or non binary: ";
 	gender = getInput.getString();
-	if (gender != "male" && gender != "female" && gender != "non binary")
+	if (gender != "male" || gender != "female" || gender != "non binary")
 	{
 		cout << "\nIs the student Male, female or non binary: ";
 	}
